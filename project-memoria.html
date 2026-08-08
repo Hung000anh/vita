@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memoria | Nguyen Hung Anh</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .feature-img { max-width: 100%; border-radius: var(--radius-sm); margin-top: 1rem; border: var(--border-glass); }
+    .feature-card { margin-bottom: 2rem; }
+    .feature-list { padding-left: 1.5rem; color: var(--text-secondary); line-height: 1.8; margin-top: 1rem; }
+    code { background: rgba(255,255,255,0.1); padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+    pre { background: rgba(0,0,0,0.3); padding: 1rem; border-radius: var(--radius-sm); overflow-x: auto; border: var(--border-glass); line-height: 1.5; color: var(--text-secondary); }
+    table { width: 100%; border-collapse: collapse; margin-top: 1rem; color: var(--text-secondary); }
+    th, td { padding: 0.75rem; text-align: left; border-bottom: var(--border-glass); }
+    th { color: var(--text-primary); font-weight: 600; }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <span class="gradient-text" style="font-size:1.4rem;">Nguyen Hung Anh</span>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="honors.html">Honors & Awards</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="links.html">Links</a></li>
+      </ul>
+    </nav>
+    <div class="nav-controls">
+      <button id="theme-toggle" class="btn-control" aria-label="Toggle theme"></button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div style="margin-bottom: 2rem;">
+      <a href="projects.html" style="color: var(--text-secondary); text-decoration: none; font-weight: 500;">&larr; Back to Projects</a>
+    </div>
+
+    <!-- Hero / Header -->
+    <section class="glass-panel" style="text-align:center; padding:3rem 1.5rem; margin-bottom:2rem;">
+      <img src="https://raw.githubusercontent.com/Hung000anh/memoria/main/icons/icon48.png" alt="Memoria Icon" style="height:64px; margin-bottom: 1rem;" />
+      <h1 style="font-size: 2.5rem; margin-bottom: 1rem;" class="gradient-text">Memoria</h1>
+      <p style="max-width: 800px; margin: 0 auto 1.5rem auto; color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6;">
+        An all-in-one browser side panel that combines translation, OCR text recognition, quick notes, clipboard history, smart reminders, live weather, and a built-in AI chat assistant.
+      </p>
+      
+      <div style="display:flex; gap:0.5rem; justify-content:center; flex-wrap:wrap; margin-bottom: 1.5rem;">
+        <img src="https://img.shields.io/badge/Manifest-V3-10b981?style=flat-square" alt="Manifest V3">
+        <img src="https://img.shields.io/badge/Chrome-Extension-4285F4?style=flat-square" alt="Chrome Extension">
+        <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License">
+      </div>
+
+      <div style="display:flex; gap:1rem; justify-content:center;">
+        <a href="https://github.com/Hung000anh/memoria" target="_blank" class="btn-gradient">View on GitHub</a>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <h2 style="margin-bottom: 1.5rem;">✨ Key Features</h2>
+    
+    <div class="glass-panel feature-card">
+      <h3>🤖 Memoria AI Chat</h3>
+      <p style="color: var(--text-secondary); margin-top: 0.5rem;">Integrated with Gemini API. Supports automatic key rotation when rate limits are reached and uses your clipboard history as context.</p>
+      <img src="https://raw.githubusercontent.com/Hung000anh/memoria/main/images/ai_chat.png" alt="AI Chat" class="feature-img" />
+    </div>
+
+    <div class="glass-panel feature-card">
+      <h3>🌐 Translation & History</h3>
+      <p style="color: var(--text-secondary); margin-top: 0.5rem;">Quickly translate text within the side panel or directly on any web page. Automatically saves translation history and provides a side-by-side view (Original - Translated).</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin-top: 1rem;">
+        <div>
+          <strong style="color: var(--text-primary); font-size: 0.9rem;">Side Panel Translation:</strong>
+          <img src="https://raw.githubusercontent.com/Hung000anh/memoria/main/images/translate.png" alt="Translation Panel" class="feature-img" />
+        </div>
+        <div>
+          <strong style="color: var(--text-primary); font-size: 0.9rem;">On-Page Web Translation:</strong>
+          <img src="https://raw.githubusercontent.com/Hung000anh/memoria/main/images/translateweb.gif" alt="Web Translation" class="feature-img" />
+        </div>
+      </div>
+    </div>
+
+    <div class="glass-panel feature-card">
+      <h3>📷 Screen OCR Translation</h3>
+      <p style="color: var(--text-secondary); margin-top: 0.5rem;">Press <code>Alt + S</code> to capture a specific screen area, extract text from images (powered by Tesseract.js Offscreen), and translate it instantly.</p>
+      <img src="https://raw.githubusercontent.com/Hung000anh/memoria/main/images/ocrweb.gif" alt="OCR Translation" class="feature-img" />
+    </div>
+
+    <div class="glass-panel feature-card">
+      <h3>📋 Clipboard History</h3>
+      <p style="color: var(--text-secondary); margin-top: 0.5rem;">Track and search through copied text, including website sources, and export context to the AI.</p>
+      <img src="https://raw.githubusercontent.com/Hung000anh/memoria/main/images/clipboard.gif" alt="Clipboard History" class="feature-img" />
+    </div>
+
+    <div class="glass-panel feature-card">
+      <h3>📝 Notes Manager</h3>
+      <p style="color: var(--text-secondary); margin-top: 0.5rem;">Create and edit Markdown-supported notes, secured with a personal passcode.</p>
+      <img src="https://raw.githubusercontent.com/Hung000anh/memoria/main/images/notes.gif" alt="Notes" class="feature-img" />
+    </div>
+
+    <div class="glass-panel feature-card">
+      <h3>⏰ Timers & Reminders</h3>
+      <p style="color: var(--text-secondary); margin-top: 0.5rem;">Set recurring alarms, play audio notifications, and manage visual task reminders.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin-top: 1rem;">
+        <div>
+          <strong style="color: var(--text-primary); font-size: 0.9rem;">Reminder Setup:</strong>
+          <img src="https://raw.githubusercontent.com/Hung000anh/memoria/main/images/reminer.png" alt="Reminder Setup" class="feature-img" />
+        </div>
+        <div>
+          <strong style="color: var(--text-primary); font-size: 0.9rem;">Timer Alert Popup:</strong>
+          <img src="https://raw.githubusercontent.com/Hung000anh/memoria/main/images/timer.gif" alt="Timer Alert" class="feature-img" />
+        </div>
+      </div>
+    </div>
+
+    <div class="glass-panel feature-card" style="margin-bottom: 2rem;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+        <div>
+          <h3>🌦️ Weather Forecast</h3>
+          <p style="color: var(--text-secondary); margin-top: 0.5rem;">Automatically detect location via IP or search for specific cities to view detailed hourly and weekly weather forecasts.</p>
+          <img src="https://raw.githubusercontent.com/Hung000anh/memoria/main/images/weather.png" alt="Weather" class="feature-img" />
+        </div>
+        <div>
+          <h3>🔓 Copy Protection Bypass</h3>
+          <p style="color: var(--text-secondary); margin-top: 0.5rem;">Automatically removes text-selection, copy, and right-click restrictions on restricted websites.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shortcuts -->
+    <section class="glass-panel" style="margin-bottom:2rem;">
+      <h2 style="margin-bottom: 1rem;">⌨️ Keyboard Shortcuts</h2>
+      <div style="overflow-x: auto;">
+        <table>
+          <thead>
+            <tr>
+              <th>Shortcut</th>
+              <th>Command / Function</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>Alt + Q</code></td>
+              <td>Open Memoria</td>
+              <td>Quickly open the Memoria Side Panel</td>
+            </tr>
+            <tr>
+              <td><code>Alt + A</code></td>
+              <td>Open AI Chat</td>
+              <td>Open the Side Panel and navigate directly to the Chat tab</td>
+            </tr>
+            <tr>
+              <td><code>Alt + W</code></td>
+              <td>Open Translation</td>
+              <td>Open the Side Panel, switch to the Translation tab, and focus the input field</td>
+            </tr>
+            <tr>
+              <td><code>Alt + S</code></td>
+              <td>Trigger OCR</td>
+              <td>Activate screen-capture mode for OCR and translation</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Installation & Setup -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+      <section class="glass-panel">
+        <h2 style="margin-bottom: 1rem;">📦 Installation</h2>
+        <ul class="feature-list">
+          <li>Clone or download the source code:<br>
+            <pre style="margin-top:0.5rem;"><code>git clone https://github.com/Hung000anh/memoria.git</code></pre>
+          </li>
+          <li>Open your browser (Chrome / CocCoc / Edge / Brave).</li>
+          <li>Navigate to the extensions management page: <code>chrome://extensions/</code></li>
+          <li>Enable <strong>Developer mode</strong>.</li>
+          <li>Click <strong>Load unpacked</strong> and select the downloaded source code folder.</li>
+          <li>Done! Click the Memoria icon on your toolbar to start using it.</li>
+        </ul>
+      </section>
+
+      <section class="glass-panel">
+        <h2 style="margin-bottom: 1rem;">🔑 API Configuration</h2>
+        <ul class="feature-list">
+          <li>Register for a free API Key at <a href="https://aistudio.google.com/" target="_blank" class="gradient-text" style="text-decoration:none;">Google AI Studio</a>.</li>
+          <li>Right-click the Memoria icon and select <strong>Options</strong> (or open Settings within the extension).</li>
+          <li>Enter your Gemini API Key and click <strong>Add Key</strong>.</li>
+          <li><em>Tip: You can add multiple keys to let the system automatically rotate them if one encounters rate limits.</em></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Project Structure -->
+    <section class="glass-panel" style="margin-bottom:2rem;">
+      <h2 style="margin-bottom: 1rem;">📂 Project Structure</h2>
+      <pre><code>memoria/
+├── manifest.json            # Chrome Extension Manifest V3 config
+├── background.js            # Main Background Service Worker
+├── background/
+│   └── services/            # Background tasks (Alarms, Translate API)
+├── content/
+│   └── modules/             # Injected scripts (Clipboard, Translate, OCR, AllowCopy)
+├── offscreen/               # Offscreen document for OCR processing
+├── ui/
+│   ├── sidepanel.html       # Main Side Panel UI
+│   ├── settings.html        # Settings / Options page
+│   ├── css/                 # UI Stylesheets
+│   └── js/
+│       ├── core/            # Configuration, i18n, Gemini API wrapper
+│       └── features/        # Feature controllers (Chat, Notes, Weather)
+└── CHANGELOG.md             # Version update history</code></pre>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Nguyen Hung Anh. All rights reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
