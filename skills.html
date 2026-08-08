@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
@@ -24,59 +24,70 @@
       </ul>
     </nav>
     <div class="nav-controls">
-
       <button id="theme-toggle" class="btn-control" aria-label="Toggle theme"></button>
     </div>
   </header>
 
   <main class="container">
     <h2 style="margin-bottom: 1.5rem;">Skills Matrix</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
 
-      <div class="glass-panel">
-        <h3>Programming Languages</h3>
-        <div style="margin-top: 1rem;">
-          <span class="badge">Python</span>
-          <span class="badge">JavaScript</span>
-          <span class="badge">TypeScript</span>
-          <span class="badge">SQL</span>
+      <!-- Row 1 -->
+      <div class="glass-panel" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; padding: 1.8rem 2rem; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="flex: 0 0 220px;">
+          <h3 style="margin: 0; font-size: 1.25rem; border-left: 3px solid var(--accent-color); padding-left: 0.8rem;">Languages</h3>
+        </div>
+        <div style="flex: 1; display: flex; flex-wrap: wrap; gap: 0.8rem;">
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">Python</span>
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">JavaScript</span>
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">TypeScript</span>
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">SQL</span>
         </div>
       </div>
 
-      <div class="glass-panel">
-        <h3>Frameworks & Libraries</h3>
-        <div style="margin-top: 1rem;">
-          <span class="badge">PyTorch</span>
-          <span class="badge">TensorFlow</span>
-          <span class="badge">Keras</span>
-          <span class="badge">Scikit-Learn</span>
-          <span class="badge">Hugging Face</span>
-          <span class="badge">OpenCV</span>
-          <span class="badge">Pandas</span>
-          <span class="badge">NumPy</span>
-          <span class="badge">FastAPI</span>
+      <!-- Row 2 -->
+      <div class="glass-panel" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; padding: 1.8rem 2rem; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="flex: 0 0 220px;">
+          <h3 style="margin: 0; font-size: 1.25rem; border-left: 3px solid var(--accent-color); padding-left: 0.8rem;">Frameworks</h3>
+        </div>
+        <div style="flex: 1; display: flex; flex-wrap: wrap; gap: 0.8rem;">
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">PyTorch</span>
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">TensorFlow</span>
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">Keras</span>
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">Scikit-Learn</span>
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">Hugging Face</span>
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">OpenCV</span>
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">Pandas</span>
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">NumPy</span>
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">FastAPI</span>
         </div>
       </div>
 
-      <div class="glass-panel">
-        <h3>Databases</h3>
-        <div style="margin-top: 1rem;">
-          <span class="badge">PostgreSQL</span>
-          <span class="badge">MySQL</span>
-          <span class="badge">SQL Server</span>
-          <span class="badge">MongoDB</span>
+      <!-- Row 3 -->
+      <div class="glass-panel" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; padding: 1.8rem 2rem; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="flex: 0 0 220px;">
+          <h3 style="margin: 0; font-size: 1.25rem; border-left: 3px solid var(--accent-color); padding-left: 0.8rem;">Databases</h3>
+        </div>
+        <div style="flex: 1; display: flex; flex-wrap: wrap; gap: 0.8rem;">
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">PostgreSQL</span>
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">MySQL</span>
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">SQL Server</span>
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">MongoDB</span>
         </div>
       </div>
 
-      <div class="glass-panel">
-        <h3>Tools & Platforms</h3>
-        <div style="margin-top: 1rem;">
-          <span class="badge">N8n</span>
-          <span class="badge">Docker</span>
-          <span class="badge">Supabase</span>
-          <span class="badge">Git</span>
-          <span class="badge">GitHub</span>
-          <span class="badge">GitHub Actions</span>
+      <!-- Row 4 -->
+      <div class="glass-panel" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; padding: 1.8rem 2rem; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="flex: 0 0 220px;">
+          <h3 style="margin: 0; font-size: 1.25rem; border-left: 3px solid var(--accent-color); padding-left: 0.8rem;">Tools & Platforms</h3>
+        </div>
+        <div style="flex: 1; display: flex; flex-wrap: wrap; gap: 0.8rem;">
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">N8n</span>
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">Docker</span>
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">Supabase</span>
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">Git</span>
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">GitHub</span>
+          <span class="badge" style="margin:0; padding: 0.5rem 1rem;">GitHub Actions</span>
         </div>
       </div>
 
@@ -89,5 +100,3 @@
   <script src="js/main.js"></script>
 </body>
 </html>
-
-

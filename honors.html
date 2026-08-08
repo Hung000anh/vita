@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
@@ -24,19 +24,36 @@
       </ul>
     </nav>
     <div class="nav-controls">
-
       <button id="theme-toggle" class="btn-control" aria-label="Toggle theme"></button>
     </div>
   </header>
 
   <main class="container">
     <h2 style="margin-bottom: 1.5rem;">Honors & Awards</h2>
-    <div class="glass-panel">
-      <h3>Academic Excellence Scholarship</h3>
-      <p style="color: var(--text-secondary); margin-top: 0.5rem;">
-        Awarded for achieving <strong>’Excellent’</strong> classification across 3 academic semesters (Highest GPA: <strong>3.60 / 4.00</strong>).
+    
+    <div class="glass-panel" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <h3 style="margin: 0; font-size: 1.4rem;">Academic Excellence Scholarship</h3>
+          <p class="gradient-text" style="margin-top: 0.3rem; font-weight: 600; font-size: 1.05rem;">Industrial University of Ho Chi Minh City</p>
+        </div>
+        <span class="badge" style="margin: 0; white-space: nowrap;">3 Semesters</span>
+      </div>
+      
+      <p style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.7; text-align: justify;">
+        Awarded the prestigious university scholarship for maintaining an <strong>'Excellent'</strong> academic classification. This scholarship recognizes top-tier students demonstrating outstanding GPAs and exceptional dedication to their studies. (Highest Semester GPA: <strong>3.60 / 4.00</strong>)
       </p>
+
+      <div style="margin-top: 1.5rem;">
+        <h4 style="margin-bottom: 0.8rem; font-size: 1.05rem; color: var(--text-primary);">Awarded Semesters:</h4>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.8rem;">
+          <span class="badge" style="margin: 0;">Semester 2 (2024 - 2025)</span>
+          <span class="badge" style="margin: 0;">Semester 2 (2023 - 2024)</span>
+          <span class="badge" style="margin: 0;">Semester 1 (2022 - 2023)</span>
+        </div>
+      </div>
     </div>
+    
   </main>
 
   <footer>
@@ -45,5 +62,3 @@
   <script src="js/main.js"></script>
 </body>
 </html>
-
-

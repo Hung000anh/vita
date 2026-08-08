@@ -170,3 +170,6 @@ footer {
   border-top: var(--border-glass);
   font-size: 0.9rem;
 }
+
+[data-theme="dark"] .theme-invert { filter: brightness(0) invert(1); }
+
