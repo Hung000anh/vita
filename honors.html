@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
@@ -6,6 +6,11 @@
   <title>Honors & Awards | Anh Nguyen</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/125584737?v=4">
+
+  <script>
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
 </head>
 <body>
   <header class="navbar">
@@ -20,7 +25,6 @@
         <li><a href="skills.html">Skills</a></li>
         <li><a href="honors.html" class="active">Honors & Awards</a></li>
         <li><a href="certifications.html">Certifications</a></li>
-        <li><a href="links.html">Links</a></li>
       </ul>
     </nav>
     <div class="nav-controls">

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
@@ -17,6 +17,11 @@
     td { text-align: center; vertical-align: top; }
   </style>
   <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/125584737?v=4">
+
+  <script>
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
 </head>
 <body>
   <header class="navbar">
@@ -31,7 +36,6 @@
         <li><a href="skills.html">Skills</a></li>
         <li><a href="honors.html">Honors & Awards</a></li>
         <li><a href="certifications.html">Certifications</a></li>
-        <li><a href="links.html">Links</a></li>
       </ul>
     </nav>
     <div class="nav-controls">
@@ -94,7 +98,7 @@
               <th>⚠️ Terms & Disclaimer</th>
             </tr>
             <tr>
-              <td><img src="https://raw.githubusercontent.com/Hung000anh/excerpo/main/images/image%20copy%203.png" class="feature-img" alt="Donate"></td>
+              <td><img src="https://raw.githubusercontent.com/Hung000anh/excerpo/main/images/image%20copy%203.png" class="feature-img" alt="Donate" style="max-height: 400px; width: auto; display: block; margin: 0 auto;"></td>
               <td><img src="https://raw.githubusercontent.com/Hung000anh/excerpo/main/images/z7927269122181_8c444270eec616307d21d0df4c4ab569.jpg" class="feature-img" alt="Terms"></td>
             </tr>
           </tbody>
@@ -160,37 +164,6 @@
       </div>
     </section>
 
-    <!-- Installation -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
-      <section class="glass-panel">
-        <h2 style="margin-bottom: 1.5rem;">⚙️ Installation Guide</h2>
-        <ol class="feature-list" style="list-style-type: decimal;">
-          <li>Click the green <code>Code</code> button -> <strong>Download ZIP</strong> and extract the folder on your computer.
-            <div style="text-align: center;"><img src="https://raw.githubusercontent.com/Hung000anh/excerpo/main/images/image1.png" alt="Step 1" class="feature-img" style="max-width: 300px;" /></div>
-          </li>
-          <li>Open the browser and visit the Extension Management page.</li>
-          <li>Turn on <strong>Developer mode</strong> in the top-right corner.
-            <div style="text-align: center;"><img src="https://raw.githubusercontent.com/Hung000anh/excerpo/main/images/image2.png" alt="Step 3" class="feature-img" style="max-width: 300px;" /></div>
-          </li>
-          <li>Select <strong>Load unpacked</strong> and choose the extracted Excerpo folder.
-            <div style="text-align: center;"><img src="https://raw.githubusercontent.com/Hung000anh/excerpo/main/images/image4.png" alt="Step 4" class="feature-img" style="max-width: 300px;" /></div>
-          </li>
-        </ol>
-      </section>
-
-      <section class="glass-panel">
-        <h2 style="margin-bottom: 1.5rem;">⚠️ Recommended Settings</h2>
-        <p style="color: var(--text-secondary); margin-bottom: 1rem;">To allow the tool to automatically save thousands of files without hanging your browser with download dialogs:</p>
-        <ul class="feature-list" style="margin-top: 0;">
-          <li>Go to <code>chrome://settings/downloads</code>.</li>
-          <li>Select the root folder to save files.</li>
-          <li><strong>TURN OFF</strong> the option: <em>"Ask where to save each file before downloading"</em>.</li>
-        </ul>
-        <div style="text-align: center; margin-top: 1rem;">
-          <img src="https://raw.githubusercontent.com/Hung000anh/excerpo/main/images/image5.png" alt="Settings" class="feature-img" style="max-width: 100%;" />
-        </div>
-      </section>
-    </div>
 
     <!-- Contributors -->
     <section class="glass-panel" style="margin-bottom: 2rem; text-align: center;">

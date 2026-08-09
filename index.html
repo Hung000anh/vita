@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
@@ -6,6 +6,11 @@
   <title>Anh Nguyen | Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/125584737?v=4">
+
+  <script>
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
 </head>
 <body>
   <header class="navbar">
@@ -20,7 +25,7 @@
         <li><a href="skills.html">Skills</a></li>
         <li><a href="honors.html">Honors & Awards</a></li>
         <li><a href="certifications.html">Certifications</a></li>
-        <li><a href="links.html">Links</a></li>
+
       </ul>
     </nav>
     <div class="nav-controls">
@@ -29,7 +34,7 @@
     </div>
   </header>
 
-  <main class="container">
+  <main class="container" style="margin-top: 1rem; margin-bottom: 0;">
     <section class="glass-panel" style="text-align:center; padding:3rem 1.5rem; margin-bottom:2rem;">
       <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHRrNzlmNWsxdmtjNHplZ2J3MTYwZTVpMTJoajlxeGV6a3dhMDlndSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8O0UuvKgNPM8t0ZK1e/giphy.gif" alt="Sakura Rain" style="width: 100%; max-width: 500px; height: 180px; object-fit: cover; object-position: center 70%; border-radius: var(--radius-md); margin-bottom: 2rem;" />
       
@@ -39,108 +44,57 @@
       </h1>
 
       
-      <p style="max-width: 700px; margin: 0 auto 2rem auto; font-style: italic; color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem;">
+      <p style="max-width: 700px; margin: 0 auto 1.5rem auto; font-style: italic; color: var(--text-secondary); line-height: 1.7; font-size: 1.1rem;">
         "I resurrect dead Latin words and give them jobs —<br>
         pulling forgotten language out of old books and putting it to work <br>
         quietly inside modern, living, breathing code."
       </p>
 
-      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap: wrap; margin-bottom: 2.5rem;">
-        <a href="https://buymeacoffee.com/hung000anh" style="display: flex; align-items: center; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-          <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 40px;"/>
-        </a>
-        <a href="https://github.com/Hung000anh" style="display: flex; align-items: center;">
-          <img src="https://komarev.com/ghpvc/?username=Hung000anh&label=Profile%20views&color=brightgreen&style=for-the-badge" alt="Profile Views" style="height: 28px;"/>
-        </a>
-      </div>
 
-      <div style="display:flex; gap:1rem; justify-content:center;">
-        <a href="projects.html" class="btn-gradient">View Projects</a>
-        <a href="links.html" class="btn-control" style="text-decoration:none;">Contact / Links</a>
-      </div>
     </section>
 
-    <section class="glass-panel" style="margin-bottom:2rem; text-align:center;">
-      <h2 style="margin-bottom: 2rem;">💻 Tech Stack Overview</h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
-        <div>
-          <h3 style="margin-bottom: 1rem; color: var(--text-secondary); font-size: 1.1rem;">🗄️ Database</h3>
-          <div style="display:flex; gap:1.2rem; justify-content:center; flex-wrap: wrap;">
-            <a href="https://www.postgresql.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="40" title="PostgreSQL" /></a>
-            <a href="https://www.mongodb.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="40" title="MongoDB" /></a>
-          </div>
-        </div>
-        <div>
-          <h3 style="margin-bottom: 1rem; color: var(--text-secondary); font-size: 1.1rem;">🧰 Tools & Platforms</h3>
-          <div style="display:flex; gap:1.2rem; justify-content:center; flex-wrap: wrap; align-items: center;">
-            <a href="https://supabase.com/" target="_blank"><img src="https://img.icons8.com/?size=100&id=sH0rW2TvYdr9&format=png&color=000000" alt="Supabase" width="40" title="Supabase" /></a>
-            <a href="https://n8n.io/" target="_blank"><img src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/n8n-color.png" alt="n8n" width="40" title="n8n" /></a>
-            <a href="https://www.docker.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker" width="40" title="Docker" /></a>
-            <a href="https://git-scm.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" width="40" title="Git" /></a>
-          </div>
-        </div>
-        <div>
-          <h3 style="margin-bottom: 1rem; color: var(--text-secondary); font-size: 1.1rem;">🚀 Frameworks</h3>
-          <div style="display:flex; gap:1.2rem; justify-content:center; flex-wrap: wrap;">
-            <a href="https://pytorch.org/" target="_blank"><img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="PyTorch" width="40" title="PyTorch" /></a>
-            <a href="https://www.tensorflow.org/" target="_blank"><img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="TensorFlow" width="40" title="TensorFlow" /></a>
-            <a href="https://scikit-learn.org/" target="_blank"><img src="https://icon.icepanel.io/Technology/svg/scikit-learn.svg" alt="Scikit-Learn" width="40" title="Scikit-Learn" /></a>
-            <a href="https://huggingface.co/" target="_blank"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HuggingFace" width="40" title="HuggingFace" /></a>
-            <a href="https://fastapi.tiangolo.com/" target="_blank"><img src="https://icon.icepanel.io/Technology/svg/FastAPI.svg" alt="FastAPI" width="40" title="FastAPI" /></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="glass-panel" style="margin-bottom:2rem; text-align:center;">
-      <h2 style="margin-bottom: 1.5rem;">📊 GitHub Stats & Activity</h2>
-      <div style="display:flex; flex-direction:column; gap:2rem; align-items:center;">
+    <section class="glass-panel" style="margin-bottom:0; text-align:center; padding: 1.5rem;">
+      <h2 style="margin-bottom: 1rem;">🌐 Connect & Links</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; text-align: left;">
         
-        <!-- Trophy -->
-        <img src="https://github.com/Hung000anh/Hung000anh/blob/main/profile/trophy.svg?raw=true" alt="GitHub Trophy" style="max-width: 100%; height: auto;" />
+        <a href="https://github.com/Hung000anh" target="_blank" class="glass-panel" style="padding: 1rem; text-decoration:none; display:flex; align-items:center; gap: 1rem; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="color: var(--text-primary);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </div>
+          <div>
+            <h3 style="color: var(--text-primary); margin: 0; font-size: 1rem;">GitHub</h3>
+          </div>
+        </a>
 
-        <!-- Stats Grid -->
-        <div style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; width:100%;">
-          <img src="https://github-readme-streak-stats-eight.vercel.app/?user=Hung000anh&theme=monokai-metallian&hide_border=true&short_numbers=true" alt="Streak" style="max-width: 100%; height: auto;" />
-          <img src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=Hung000anh&show_icons=true&include_all_commits=true&count_private=true&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866" alt="Stats" style="max-width: 100%; height: auto;" />
-          <img src="https://github.com/Hung000anh/Hung000anh/blob/main/top-languages.svg?raw=true" alt="Top Languages" style="max-width: 100%; height: auto;" />
-        </div>
+        <a href="https://linkedin.com/in/hung-anh-nguyen" target="_blank" class="glass-panel" style="padding: 1rem; text-decoration:none; display:flex; align-items:center; gap: 1rem; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="color: var(--text-primary);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div>
+            <h3 style="color: var(--text-primary); margin: 0; font-size: 1rem;">LinkedIn</h3>
+          </div>
+        </a>
 
-        <!-- Activity Graph -->
-        <img src="https://github-readme-activity-graph.vercel.app/graph/?username=Hung000anh&bg_color=1F222E&color=F8D866&line=F85D7F&point=FFFFFF&hide_border=true&height=300&days=30" alt="Activity Graph" style="max-width: 100%; height: auto; border-radius: var(--radius-md);" />
-        
+        <a href="mailto:hunganhnguyen130@gmail.com" class="glass-panel" style="padding: 1rem; text-decoration:none; display:flex; align-items:center; gap: 1rem; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="color: var(--text-primary);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div>
+            <h3 style="color: var(--text-primary); margin: 0; font-size: 1rem;">Email</h3>
+          </div>
+        </a>
+
+        <a href="https://buymeacoffee.com/hung000anh" target="_blank" class="glass-panel" style="padding: 1rem; text-decoration:none; display:flex; align-items:center; gap: 1rem; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="color: var(--text-primary);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+          </div>
+          <div>
+            <h3 style="color: var(--text-primary); margin: 0; font-size: 1rem;">Support Me</h3>
+          </div>
+        </a>
+
       </div>
     </section>
-
-    <section class="glass-panel" style="margin-bottom:2rem; text-align:center;">
-      <h2 style="margin-bottom: 1.5rem;">🎮 Contributions</h2>
-      <div style="display:flex; justify-content:center;">
-        <!-- Arcade Game -->
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hung000anh/Hung000anh/output/github-arcade-dark.svg">
-          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Hung000anh/Hung000anh/output/github-arcade.svg">
-          <img alt="arcade contribution game" src="https://raw.githubusercontent.com/Hung000anh/Hung000anh/output/github-arcade.svg" style="max-width: 100%; height: auto;">
-        </picture>
-      </div>
-    </section>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-      <div class="glass-panel">
-        <h3>⚡ Experience</h3>
-        <p style="color: var(--text-secondary); margin-top:0.5rem;">AI Engineer at Digitech Solution & QA Tester at Stopest Co., Ltd.</p>
-        <a href="experience.html" class="gradient-text" style="display:inline-block; margin-top:1rem; text-decoration:none;">Read more &rarr;</a>
-      </div>
-      <div class="glass-panel">
-        <h3>🚀 Top Projects</h3>
-        <p style="color: var(--text-secondary); margin-top:0.5rem;">Hach Thach Thon, Nuntius, Excerpo, Verto, and Memoria.</p>
-        <a href="projects.html" class="gradient-text" style="display:inline-block; margin-top:1rem; text-decoration:none;">Explore projects &rarr;</a>
-      </div>
-      <div class="glass-panel">
-        <h3>🎓 Education</h3>
-        <p style="color: var(--text-secondary); margin-top:0.5rem;">BS in Computer Science at Industrial University of Ho Chi Minh City (GPA: 3.31/4.00).</p>
-        <a href="education.html" class="gradient-text" style="display:inline-block; margin-top:1rem; text-decoration:none;">View details &rarr;</a>
-      </div>
-    </div>
   </main>
 
   <footer>

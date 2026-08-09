@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
@@ -16,6 +16,11 @@
     th { color: var(--text-primary); font-weight: 600; }
   </style>
   <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/125584737?v=4">
+
+  <script>
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
 </head>
 <body>
   <header class="navbar">
@@ -30,7 +35,6 @@
         <li><a href="skills.html">Skills</a></li>
         <li><a href="honors.html">Honors & Awards</a></li>
         <li><a href="certifications.html">Certifications</a></li>
-        <li><a href="links.html">Links</a></li>
       </ul>
     </nav>
     <div class="nav-controls">
@@ -171,53 +175,6 @@
       </div>
     </section>
 
-    <!-- Installation & Setup -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
-      <section class="glass-panel">
-        <h2 style="margin-bottom: 1rem;">📦 Installation</h2>
-        <ul class="feature-list">
-          <li>Clone or download the source code:<br>
-            <pre style="margin-top:0.5rem;"><code>git clone https://github.com/Hung000anh/memoria.git</code></pre>
-          </li>
-          <li>Open your browser (Chrome / CocCoc / Edge / Brave).</li>
-          <li>Navigate to the extensions management page: <code>chrome://extensions/</code></li>
-          <li>Enable <strong>Developer mode</strong>.</li>
-          <li>Click <strong>Load unpacked</strong> and select the downloaded source code folder.</li>
-          <li>Done! Click the Memoria icon on your toolbar to start using it.</li>
-        </ul>
-      </section>
-
-      <section class="glass-panel">
-        <h2 style="margin-bottom: 1rem;">🔑 API Configuration</h2>
-        <ul class="feature-list">
-          <li>Register for a free API Key at <a href="https://aistudio.google.com/" target="_blank" class="gradient-text" style="text-decoration:none;">Google AI Studio</a>.</li>
-          <li>Right-click the Memoria icon and select <strong>Options</strong> (or open Settings within the extension).</li>
-          <li>Enter your Gemini API Key and click <strong>Add Key</strong>.</li>
-          <li><em>Tip: You can add multiple keys to let the system automatically rotate them if one encounters rate limits.</em></li>
-        </ul>
-      </section>
-    </div>
-
-    <!-- Project Structure -->
-    <section class="glass-panel" style="margin-bottom:2rem;">
-      <h2 style="margin-bottom: 1rem;">📂 Project Structure</h2>
-      <pre><code>memoria/
-├── manifest.json            # Chrome Extension Manifest V3 config
-├── background.js            # Main Background Service Worker
-├── background/
-│   └── services/            # Background tasks (Alarms, Translate API)
-├── content/
-│   └── modules/             # Injected scripts (Clipboard, Translate, OCR, AllowCopy)
-├── offscreen/               # Offscreen document for OCR processing
-├── ui/
-│   ├── sidepanel.html       # Main Side Panel UI
-│   ├── settings.html        # Settings / Options page
-│   ├── css/                 # UI Stylesheets
-│   └── js/
-│       ├── core/            # Configuration, i18n, Gemini API wrapper
-│       └── features/        # Feature controllers (Chat, Notes, Weather)
-└── CHANGELOG.md             # Version update history</code></pre>
-    </section>
 
   </main>
 

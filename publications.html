@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
@@ -6,6 +6,11 @@
   <title>Publications | Anh Nguyen</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/125584737?v=4">
+
+  <script>
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
 </head>
 <body>
   <header class="navbar">
@@ -20,7 +25,6 @@
         <li><a href="skills.html">Skills</a></li>
         <li><a href="honors.html">Honors & Awards</a></li>
         <li><a href="certifications.html">Certifications</a></li>
-        <li><a href="links.html">Links</a></li>
       </ul>
     </nav>
     <div class="nav-controls">
@@ -41,12 +45,11 @@
         <p style="margin: 0;"><strong>Conference:</strong> FIT.IUH Faculty Scientific Conference - 2nd SSRC 2025 (Vol 1, No 2)</p>
         <p style="margin: 0;"><strong>Category:</strong> Computer & Data Science</p>
       </div>
-
       <div style="margin-top: 1.5rem;">
-        <h4 style="margin-bottom: 0.6rem; font-size: 1.1rem;">Abstract</h4>
-        <p style="color: var(--text-secondary); line-height: 1.7; text-align: justify; margin: 0;">
-          The paper proposes an automated news sentiment classification website platform and interactive chatbot support. The system leverages advanced AI models to classify articles into positive, negative, or neutral categories, helping users quickly grasp public opinion. Furthermore, the integrated multi-channel chatbot provides real-time information retrieval and interaction, enhancing user experience and accessibility. Experimental evaluation shows the sentiment classification model achieves high accuracy, while the chatbot improves user experience through timely and relevant responses. The proposed system offers a comprehensive solution for smart news access, combining sentiment analysis with direct interactive support.
-        </p>
+        <a href="https://ssrc.fit.iuh.edu.vn/conf/article/view/164" target="_blank" class="btn-control" style="text-decoration:none; display:inline-flex; align-items:center; gap:0.5rem; font-size:0.9rem; padding: 0.5rem 1rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          View Paper
+        </a>
       </div>
       
       <div style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.6rem;">
